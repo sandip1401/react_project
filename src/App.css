@@ -1,4 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -35,4 +39,99 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.row{
+  width: 1320px;
+  margin: auto;
+  display: flex;
+}
+
+.cardItems{
+  flex-basis: 23%;
+  margin: 1%;
+  height: 200px;
+  background-color: aqua;
+}
+
+/* .modelOverlay{
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+} */
+
+/* .ModelDiv{
+  width: 320px;
+  position: fixed;
+  height: 320px;
+  left: 50%;
+  top: -500px;
+  transform: translate(-50%,-50%);
+  background-color: rgb(13, 128, 228);
+} */
+
+/* .en{
+  position: fixed;
+  background-color: #61dafb;
+  border: 2px black;
+  border-radius: 2px;
+  right: 10px;
+} */
+
+.faqouter{
+  width: 720px;
+  margin: auto;
+}
+
+.faqItems{
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+
+.faqItems h2{
+  margin:0px;
+  padding: 10px;
+  background-color: #282c34;
+  color: wheat;
+  text-align: left;
+}
+
+.faq{
+  margin-top: 50px;
+}
+
+.faqItems p{
+    text-align: left;
+    height: 0px;
+    margin: 0px;
+    transition: 0.5s;
+    transform: scaleY(0);
+    padding: 0px;
+}
+
+.activeAns{
+  height: auto !important;
+  transform: scaleY(1) !important;
+  padding: 10px !important;
+}
+
+.tabouter ul li button{
+  padding: 5px;
+  border: 5px solid black;
+}
+
+.tab-btn{
+  padding: 2.5px 5px;
+  border: 3px;
+  background-color: #41506e;
+  color: aliceblue;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.activeButton{
+  color: wheat !important;
+  background-color: red !important;
 }
