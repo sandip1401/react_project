@@ -1,8 +1,7 @@
-import { FaRegEye } from "react-icons/fa";
-import React, { use, useEffect } from "react";
-import { FaRegEyeSlash } from "react-icons/fa";
+
+import React, {  useEffect } from "react";
 import "react-toastify/dist/ReactToastify.css";
-import { act, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate,useLocation } from "react-router-dom";
@@ -155,8 +154,5 @@ function Home({ arr, setArr }) {
   );
 }
 
-function Card() {
-  return <div className="cardItems">Card Div</div>;
-}
 
 export default Home;
